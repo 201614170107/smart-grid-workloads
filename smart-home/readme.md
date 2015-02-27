@@ -3,5 +3,6 @@
 ### Data source
 - [smart home traces](./originData)
 
-### Visualized results
+### Analysis
+- [analysis](./analysis)
 
