@@ -1,3 +1,4 @@
 ## Smart Home
 
-- [smart home traces](http://traces.cs.umass.edu/index.php/Smart/Smart)
+### Data source
+- [smart home traces](./originData)
