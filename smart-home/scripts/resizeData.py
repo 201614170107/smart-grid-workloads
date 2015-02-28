@@ -2,7 +2,7 @@ import sys
 import os
 import csv
 import numpy
-import pandas
+
 
 
 #column: target column
