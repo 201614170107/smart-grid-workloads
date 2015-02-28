@@ -14,9 +14,6 @@ sample = textread(strcat('../processedData/microgrid/',num2str(homeNum(1,1)),'.t
  end
 
 
-%set y's unit as kw
-y = y./5
-
 strcat('../processedData/microgrid/',num2str(homeNum(1,i)),'.txt')
 
 %Build Figure

@@ -19,7 +19,8 @@ def resizeData(column, num, input, output):
 	#read each 5 number
 	for i in range(0, len(data), 5):
 		#sum up every 5 numbers
-		newdata.append(numpy.sum(data[i:i+5,]))
+		newdata.append(numpy.mean(data[i:i+5,]))
+
 
 	#save file
 	#set precision
