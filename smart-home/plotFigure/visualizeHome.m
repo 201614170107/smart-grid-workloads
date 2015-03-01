@@ -53,7 +53,7 @@ end
   end
   
 %set x range and y range
-axis([0 len+1 0 15])
+axis([0 len+1 0 10])
 
 %set x tick and y tick
 %set(axes1,'YTick',[0.2,0.4,0.6,0.8,1.0],'YTickLabel',{'20%','40%','60%','80%','100%'},'XGrid','on','YGrid','on');

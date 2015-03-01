@@ -16,6 +16,8 @@ def resizeData(column, num, input, output,energyFilterUpperBound):
 
 	if(len(data)<1440):
 		return False
+	if(numpy.max(data)>20):
+		return False
 	if(numpy.sum(data)<1):
 		return False
 	#read each 5 number
