@@ -1,8 +1,7 @@
 ## Smart Home
 
-### Data source
-- [smart home traces](./originData)
+### Intro
+Electrical data over a single 24-hour period from 443 unique homes
 
-### Analysis
-- [analysis](./analysis)
+
 
