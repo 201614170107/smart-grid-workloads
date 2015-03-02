@@ -1,5 +1,7 @@
 ## Smart Home
 
+### Intro
+
 ### Data source
 - [smart home traces](./originData)
 
