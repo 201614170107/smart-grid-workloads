@@ -5,4 +5,4 @@
 
 |File| Note|
 |:----|:----|
-|[]()| extract a 5-day solar traces information from [solar trace file]()|
+|[processSolarTrace.py](./processSolarTrace.py)| extract a 5-day solar traces information from [solar trace file]()|
