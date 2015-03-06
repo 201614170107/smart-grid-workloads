@@ -1,15 +1,16 @@
 import os
 import numpy
+import random
 
 # genrate 5 days traces by repeating one day traces
 def generateSimHomes(outputDir, n):
-	reputationUpper = 100;
+	reputationUpper = 200;
 	reputationPath = outputDir+"reputation.txt"
 	reputation = []
 	for i in range(0, n, 1):
-		item = randint(0,reputationUpper)
-		reputation = reputation.extend(item)
-	numpy.sort(reputation)
+		item = random.randint(0,reputationUpper)
+		reputation.append(item)
+	reputation = numpy.sort(reputation)
 	numpy.savetxt(reputationPath, reputation, fmt = '%0.5f')
 
 
