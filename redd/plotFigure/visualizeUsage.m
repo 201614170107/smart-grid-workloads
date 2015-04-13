@@ -2,10 +2,11 @@
 usage = load('..\processData\data\house_1\average_electricity.txt');
 time = load('..\processData\data\house_1\timestamp.txt');
 maxLen = size(usage,1)
-start =223+12*24;
+start =15*12+8;
 len = 12*24*3+1
 %convert time
-time = (time - datenum('01-Jan-1970')) / 86400;
+%convert the time to Boston time
+time = (time - 5*3600) / 86400+datenum('01-Jan-1970') ;
 
 
 %Build Figure
@@ -24,7 +25,7 @@ set(p, 'Color', 'b', 'LineWidth', 3, 'linestyle','-');
 %set x-tick
 %set(axes1,'YTick',[0.2,0.4,0.6,0.8,1.0],'YTickLabel',{'20%','40%','60%','80%','100%'},'XGrid','on','YGrid','on');
 set(axes1,'XTick',time(start: 12*24:start+len-1),'XTickLabel', time(start: 12*24:start+len-1),'XGrid','on','YGrid','on');
-datetick('x', 'mm/dd HH:MM' ,'keepticks')
+datetick('x', 'mm/dd/yy HH:MM' ,'keepticks')
 
 %set grid on 
 set(axes1,'XGrid','on','YGrid','on');

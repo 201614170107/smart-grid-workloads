@@ -46,7 +46,7 @@ def print_time_stamp(start_time, end_time, time_slot_length, output_dir):
 	numpy.savetxt(output_dir+"timestamp.txt", data, fmt = '%d')
 
 
-def call_aggregate_channel(start_time, end_time, time_slot_length, inputDir, outputDir,filename, output_filename ):
+def call_aggregate_channel(start_time, end_time, time_slot_length, inputDir, outputDir ):
 	# there are 20 channels in total
 	for idx in range(1,21):
 		filename = "channel_"+str(idx)+".dat"
@@ -54,14 +54,14 @@ def call_aggregate_channel(start_time, end_time, time_slot_length, inputDir, out
 		aggregate_timeslot(start_time, end_time, time_slot_length, inputDir+filename, outputDir + output_filename)
 
 if __name__ == '__main__':
-	start_time = 1303132929
+	start_time = 1303133100
 	end_time = 1306266994
 	time_slot_length = 5
 	house = "house_1"
 	inputDir = "..\\data\\low_freq\\"+house+"\\"
 	outputDir = "..\\processData\\data\\"+house+"\\"
 
-	#call_aggregate_channel(start_time, end_time, time_slot_length, inputDir, outputDir,filename, output_filename )
+	call_aggregate_channel(start_time, end_time, time_slot_length, inputDir, outputDir)
 	
 	
 
