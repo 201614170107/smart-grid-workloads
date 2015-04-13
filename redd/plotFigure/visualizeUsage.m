@@ -25,7 +25,7 @@ set(p, 'Color', 'b', 'LineWidth', 3, 'linestyle','-');
 %set x-tick
 %set(axes1,'YTick',[0.2,0.4,0.6,0.8,1.0],'YTickLabel',{'20%','40%','60%','80%','100%'},'XGrid','on','YGrid','on');
 set(axes1,'XTick',time(start: 12*24:start+len-1),'XTickLabel', time(start: 12*24:start+len-1),'XGrid','on','YGrid','on');
-datetick('x', 'mm/dd/yy HH:MM' ,'keepticks')
+datetick('x', 'mm/dd HH:MM' ,'keepticks')
 
 %set grid on 
 set(axes1,'XGrid','on','YGrid','on');
